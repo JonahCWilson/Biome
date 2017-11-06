@@ -1,4 +1,7 @@
+from PlotStatus import PlotStatus
+
 class Plot(object):
 	
-	def init(self):
-		self.status = PlotStatus.NEUTRAL
+	def __init__(self, Position):
+		self.Status = PlotStatus()
+		self.Position = Position #(y, x) tuple

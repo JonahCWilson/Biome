@@ -1,3 +1,5 @@
+import Elements
+
 class PlotStatus(object):
 	'''
 	Rather than having one particular status, a plot can differing levels 
@@ -6,12 +8,17 @@ class PlotStatus(object):
 	'''
 	
 	def __init__(self, FireLevel, WaterLevel, WindLevel, EarthLevel, Element):
-		self.FireLevel = FireLevel
-		self.WaterLevel = WaterLevel
-		self.WindLevel = WindLevel
-		self.EarthLevel = EarthLevel
-		self.Element = Elements.NEUTRAL
+		self.__FireLevel = FireLevel
+		self.__WaterLevel = WaterLevel
+		self.__WindLevel = WindLevel
+		self.__EarthLevel = EarthLevel
+		self.__Element = Elements.NEUTRAL
 		
-	def change_element(self, element):
-		self.Element = element
+	def set_element(self, element):
+		self.__Element = element
+		
+	def get_element(self):
+		return self.__Element
+		
+	
 	
