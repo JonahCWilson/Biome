@@ -1,4 +1,4 @@
-import Elements
+from Elements import Elements
 
 class PlotStatus(object):
 	'''
@@ -7,7 +7,7 @@ class PlotStatus(object):
 	levels allow for different actions.
 	'''
 	
-	def __init__(self, FireLevel, WaterLevel, WindLevel, EarthLevel, Element):
+	def __init__(self, FireLevel, WaterLevel, WindLevel, EarthLevel):
 		self.__FireLevel = FireLevel
 		self.__WaterLevel = WaterLevel
 		self.__WindLevel = WindLevel
