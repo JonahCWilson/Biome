@@ -13,5 +13,5 @@ class Gameboard(object):
 				output[(i, j)] = Plot((i, j))
 		return output
 		
-	def initialize(self):
+	def initialize(self);
 		pass
